@@ -68,7 +68,12 @@ function showTesting(data) {
 }
 
 function showMeta(data) {
+
+    var update = JSON.stringify(data.meta.lastUpdate);
+
+    update = update.replaceAll("-",".");
+
     document.getElementById("metaSource").innerHTML += data.meta.source;
-    document.getElementById("metaUpdate").innerHTML += data.meta.lastUpdate;
+    document.getElementById("metaUpdate").innerHTML += update.substring(1,11);
     document.getElementById("metaInfo").innerHTML += data.meta.info;
 }
