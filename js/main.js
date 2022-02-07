@@ -14,6 +14,7 @@ async function getData(url) {
 
     if(url === urlGermany) {
         showGermany(data);
+        showMeta(data);
     }
     
     if(url === urlVaccinations) {
@@ -64,4 +65,10 @@ function showTesting(data) {
     document.getElementById("testingPositiveTests").innerHTML += data.data.history[data.data.history.length-1].positiveTests;
     document.getElementById("testingPositivityRate").innerHTML += data.data.history[data.data.history.length-1].positivityRate;
     document.getElementById("testingLaboratoryCount").innerHTML += data.data.history[data.data.history.length-1].laboratoryCount;
+}
+
+function showMeta(data) {
+    document.getElementById("metaSource").innerHTML += data.meta.source;
+    document.getElementById("metaUpdate").innerHTML += data.meta.lastUpdate;
+    document.getElementById("metaInfo").innerHTML += data.meta.info;
 }
