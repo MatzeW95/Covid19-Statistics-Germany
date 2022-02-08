@@ -106,6 +106,14 @@ h1, h2 {
     text-align: right;
 }
 
+#vaccineOne, #vaccineTwo, #vaccineThree, #district {
+    margin: 1rem 0px 0px;
+}
+
+.bold {
+    font-weight: 700; 
+}
+
 .footerContainer {
     width: 80%;
     margin: auto;
