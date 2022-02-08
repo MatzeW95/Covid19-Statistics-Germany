@@ -112,10 +112,10 @@ function showState(data) {
     document.getElementById("statePopulation").innerHTML += formatNumber(path.population);
     document.getElementById("stateCases").innerHTML += formatNumber(path.cases);
     document.getElementById("stateCasesToday").innerHTML += formatNumber(path.delta.cases);
-    document.getElementById("stateDeaths").innerHTML += formatNumber(path.deaths);
-    document.getElementById("stateDeathsToday").innerHTML += formatNumber(path.delta.deaths); 
     document.getElementById("stateRecovered").innerHTML += formatNumber(path.recovered);
     document.getElementById("stateRecoveredToday").innerHTML += formatNumber(path.delta.recovered);
+    document.getElementById("stateDeaths").innerHTML += formatNumber(path.deaths);
+    document.getElementById("stateDeathsToday").innerHTML += formatNumber(path.delta.deaths);
     document.getElementById("stateWeekIncidence").innerHTML += roundNumber(path.weekIncidence);
     document.getElementById("stateCasesPer100k").innerHTML += roundNumber(path.casesPer100k);
     document.getElementById("stateHospitalizationCases7Days").innerHTML += formatNumber(path.hospitalization.cases7Days);
@@ -128,10 +128,10 @@ function showDistrict(data) {
     document.getElementById("districtPopulation").innerHTML += formatNumber(path.population);
     document.getElementById("districtCases").innerHTML += formatNumber(path.cases);
     document.getElementById("districtCasesToday").innerHTML += formatNumber(path.delta.cases);
-    document.getElementById("districtDeaths").innerHTML += formatNumber(path.deaths);
-    document.getElementById("districtDeathsToday").innerHTML += formatNumber(path.delta.deaths);
     document.getElementById("districtRecovered").innerHTML += formatNumber(path.recovered);
     document.getElementById("districtRecoveredToday").innerHTML += formatNumber(path.delta.recovered);
+    document.getElementById("districtDeaths").innerHTML += formatNumber(path.deaths);
+    document.getElementById("districtDeathsToday").innerHTML += formatNumber(path.delta.deaths);
     document.getElementById("districtWeekIncidence").innerHTML += roundNumber(path.weekIncidence);
     document.getElementById("districtCasesPer100k").innerHTML += roundNumber(path.casesPer100k);
 }
