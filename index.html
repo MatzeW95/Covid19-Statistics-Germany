@@ -18,77 +18,244 @@
         <div class="gridContainer">
             <div class="covidInformation">
                 <h2>
-                    Allgemeine Informationen
-                </h2> 
-                <p id="cases">Fälle: </p>
-                <p id="casesToday">+ </p>
-                <p id="recovered">Genesen: </p>
-                <p id="recoveredToday">+ </p>
-                <p id="deaths">Todesfälle: </p>
-                <p id="deathsToday">+ </p>
+                    Übersicht
+                </h2>
+                <div class="containerSingleData">
+                    <p>Fälle</p>
+                    <p id="cases"></p>
+                </div>
+                <p id="casesToday" class="dataToday">+ </p>
+                <div class="containerSingleData">
+                    <p>Genesen</p>
+                    <p id="recovered"></p>
+                </div>
+                <p id="recoveredToday" class="dataToday">+ </p>
+                <div class="containerSingleData">
+                    <p>Todesfälle</p>
+                    <p id="deaths"></p>
+                </div>
+                <p id="deathsToday" class="dataToday">+ </p>
             </div>
             <div class="covidTests"> 
                 <h2>
                     PCR Tests
                 </h2>
-                <p id="testingCalendarWeek">Kalenderwoche: </p>
-                <p id="testingperformedTests">Durchgeführte Tests: </p>
-                <p id="testingPositiveTests">Positive Tests: </p>
-                <p id="testingPositivityRate">Positive Quote: </p>
-                <p id="testingLaboratoryCount">Anzahl Labore: </p>
+                <div class="containerSingleData">
+                    <p>Kalenderwoche</p>
+                    <p id="testingCalendarWeek"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Durchgeführte Tests</p>
+                    <p id="testingperformedTests"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Positive Tests</p>
+                    <p id="testingPositiveTests"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Positiv Quote</p>
+                    <p id="testingPositivityRate"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Anzahl Labore</p>
+                    <p id="testingLaboratoryCount"></p>
+                </div>
             </div>
             <div class="covidVaccinations">
                 <h2>
                     Impfungen
                 </h2>
-                <p id="vaccinationOne">Erstimpfung: </p>
-                <p id="vaccinationOneToday">+ </p>
-                <p id="vaccinationOneQuoteTotal">Impfquote: </p>
-                <p id="vaccinationOneQuoteUnder">Impfquote (5-17): </p>
-                <p id="vaccinationOneQuoteOver">Impfquote (18+): </p>
-                <p id="vaccinationTwo">Zweitimpfung: </p>
-                <p id="vaccinationTwoToday">+ </p>
-                <p id="vaccinationTwoQuoteTotal">Impfquote: </p>
-                <p id="vaccinationTwoQuoteUnder">Impfquote (5-17): </p>
-                <p id="vaccinationTwoQuoteOver">Impfquote (18+): </p>
-                <p id="vaccinationThree">Boosterimpfung: </p>
-                <p id="vaccinationThreeToday">+ </p>
-                <p id="vaccinationThreeQuoteTotal">Impfquote: </p>
-                <p id="vaccinationThreeQuoteUnder">Impfquote (5-17): </p>
-                <p id="vaccinationThreeQuoteOver">Impfquote (18+): </p>
+                <div class="containerSingleData">
+                    <p>Erstimpfung</p>
+                    <p id="vaccinationOne"></p>
+                </div>
+                <p id="vaccinationOneToday" class="dataToday">+ </p>
+                <div class="containerSingleData">
+                    <p>Impfquote</p>
+                    <p id="vaccinationOneQuoteTotal"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Impfquote (5 - 17)</p>
+                    <p id="vaccinationOneQuoteUnder"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Impfquote (18+)</p>
+                    <p id="vaccinationOneQuoteOver"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Zweitimpfung</p>
+                    <p id="vaccinationTwo"></p>
+                </div>
+                <p id="vaccinationTwoToday" class="dataToday">+ </p>
+                <div class="containerSingleData">
+                    <p>Impfquote</p>
+                    <p id="vaccinationTwoQuoteTotal"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Impfquote (5 - 17)</p>
+                    <p id="vaccinationTwoQuoteUnder"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Impfquote (18+)</p>
+                    <p id="vaccinationTwoQuoteOver"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Boosterimpfung</p>
+                    <p id="vaccinationThree"></p>
+                </div>
+                <p id="vaccinationThreeToday" class="dataToday">+ </p>
+                <div class="containerSingleData">
+                    <p>Impfquote</p>
+                    <p id="vaccinationThreeQuoteTotal"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Impfquote (5 - 17)</p>
+                    <p id="vaccinationThreeQuoteUnder"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Impfquote (18+)</p>
+                    <p id="vaccinationThreeQuoteOver"></p>
+                </div> 
             </div>
             <div class="covidDistricts">
                 <div class="search">
                     <input id="searchState" placeholder="Bundesland">
-                    <input id="searchName" placeholder="Kreis">
+                    <input id="searchName" placeholder="Landkreis">
                 </div>
+                <div id="state">
+                    <h2>
+                        Bundesland
+                    </h2>
+                    <div class="containerSingleData">
+                        <p>Bundesland</p>
+                        <p id="stateName"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Einwohnerzahl</p>
+                        <p id="statePopulation"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Fälle</p>
+                        <p id="stateCases"></p>
+                    </div>
+                    <p id="stateCasesToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Todesfälle</p>
+                        <p id="stateDeaths"></p>
+                    </div>
+                    <p id="stateDeathsToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Genesen</p>
+                        <p id="stateRecovered"></p>
+                    </div>
+                    <p id="stateRecoveredToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Wocheninzidenz</p>
+                        <p id="stateWeekIncidence"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Fälle pro 100.000</p>
+                        <p id="stateCasesPer100k"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Hospitalisierungsrate / 7 Tage</p>
+                        <p id="stateHospitalizationCases7Days"></p>
+                    </div>
+                </div>
+                <div id="district">
+                    <h2>
+                        Landkreis
+                    </h2>
+                    <div class="containerSingleData">
+                        <p>Landkreis</p>
+                        <p id="districtName"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Einwohnerzahl</p>
+                        <p id="districtPopulation"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Fälle</p>
+                        <p id="districtCases"></p>
+                    </div>
+                    <p id="districtCasesToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Todesfälle</p>
+                        <p id="districtDeaths"></p>
+                    </div> 
+                    <p id="districtDeathsToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Genesen</p>
+                        <p id="districtRecovered"></p>
+                    </div>
+                    <p id="districtRecoveredToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Wocheninzidenz</p>
+                            <p id="districtWeekIncidence"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Fälle pro 100.000</p>
+                        <p id="districtCasesPer100k"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="covidFemale">
                 <h2>
-                    Bundesland
+                    Infizierung weiblich
                 </h2>
-                <p id="stateName">Bundesland: </p>
-                <p id="statePopulation">Einwohnerzahl: </p>
-                <p id="stateCases">Fälle: </p>
-                <p id="stateCasesToday">+ </p>
-                <p id="stateDeaths">Todesfälle: </p>
-                <p id="stateDeathsToday">+ </p>
-                <p id="stateRecovered">Genesen: </p>
-                <p id="stateRecoveredToday">+ </p>
-                <p id="stateWeekIncidence">Wocheninzidenz: </p>
-                <p id="stateCasesPer100k">Fälle pro 100.000: </p>
-                <p id="stateHospitalizationCases7Days">Hospitalisierungsrate/7 Tage: </p>
+                <div class="containerSingleData">
+                    <p>0 - 4 Jahre</p>
+                    <p id="FemaleOneCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>5 - 14 Jahre</p>
+                    <p id="FemaleTwoCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>15 - 34 Jahre</p>
+                    <p id="FemaleThreeCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>35 - 59 Jahre</p>
+                    <p id="FemaleFourCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>60 - 79 Jahre</p>
+                    <p id="FemaleFiveCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>80+ Jahre</p>
+                    <p id="FemaleSixCases"></p>
+                </div>
+            </div>
+            <div class="covidMale">
                 <h2>
-                    Kreis
+                    Infizierung männlich
                 </h2>
-                <p id="districtName">Kreis: </p>
-                <p id="districtPopulation">Einwohnerzahl: </p>
-                <p id="districtCases">Fälle: </p>
-                <p id="districtCasesToday">+ </p>
-                <p id="districtDeaths">Todesfälle: </p>
-                <p id="districtDeathsToday">+ </p>
-                <p id="districtRecovered">Genesen: </p>
-                <p id="districtRecoveredToday">+ </p>
-                <p id="districtWeekIncidence">Wocheninzidenz: </p>
-                <p id="districtCasesPer100k">Fälle pro 100.000: </p>
+                <div class="containerSingleData">
+                    <p>0 - 4 Jahre</p>
+                    <p id="MaleOneCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>5 - 14 Jahre</p>
+                    <p id="MaleTwoCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>15 - 34 Jahre</p>
+                    <p id="MaleThreeCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>35 - 59 Jahre</p>
+                    <p id="MaleFourCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>60 - 79 Jahre</p>
+                    <p id="MaleFiveCases"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>80+ Jahre</p>
+                    <p id="MaleSixCases"></p>
+                </div>
             </div>
         </div>
     </main>
