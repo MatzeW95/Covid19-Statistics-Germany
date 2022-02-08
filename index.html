@@ -35,6 +35,22 @@
                     <p id="deaths"></p>
                 </div>
                 <p id="deathsToday" class="dataToday">+ </p>
+                <div class="containerSingleData">
+                    <p>Wocheninzidenz</p>
+                    <p id="weekIncidence"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Fälle pro 100.000</p>
+                    <p id="casesPer100k"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Reproduktionszahl</p>
+                    <p id="rValue"></p>
+                </div>
+                <div class="containerSingleData">
+                    <p>Hospitalisierungsfälle / 7 Tage</p>
+                    <p id="hospitalizationCases7Days"></p>
+                </div>
             </div>
             <div class="covidTests"> 
                 <h2>
@@ -65,57 +81,63 @@
                 <h2>
                     Impfungen
                 </h2>
-                <div class="containerSingleData">
-                    <p>Erstimpfung</p>
-                    <p id="vaccinationOne"></p>
+                <div id="vaccineOne">
+                    <div class="containerSingleData">
+                        <p class="bold">Erstimpfung</p>
+                        <p id="vaccinationOne" class="bold"></p>
+                    </div>
+                    <p id="vaccinationOneToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Impfquote</p>
+                        <p id="vaccinationOneQuoteTotal"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Impfquote (5 - 17)</p>
+                        <p id="vaccinationOneQuoteUnder"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Impfquote (18+)</p>
+                        <p id="vaccinationOneQuoteOver"></p>
+                    </div>
                 </div>
-                <p id="vaccinationOneToday" class="dataToday">+ </p>
-                <div class="containerSingleData">
-                    <p>Impfquote</p>
-                    <p id="vaccinationOneQuoteTotal"></p>
+                <div id="vaccineTwo">
+                    <div class="containerSingleData">
+                        <p class="bold">Zweitimpfung</p>
+                        <p id="vaccinationTwo" class="bold"></p>
+                    </div>
+                    <p id="vaccinationTwoToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Impfquote</p>
+                        <p id="vaccinationTwoQuoteTotal"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Impfquote (5 - 17)</p>
+                        <p id="vaccinationTwoQuoteUnder"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Impfquote (18+)</p>
+                        <p id="vaccinationTwoQuoteOver"></p>
+                    </div>
                 </div>
-                <div class="containerSingleData">
-                    <p>Impfquote (5 - 17)</p>
-                    <p id="vaccinationOneQuoteUnder"></p>
+                <div id="vaccineThree">
+                    <div class="containerSingleData">
+                        <p class="bold">Boosterimpfung</p>
+                        <p id="vaccinationThree" class="bold"></p>
+                    </div>
+                    <p id="vaccinationThreeToday" class="dataToday">+ </p>
+                    <div class="containerSingleData">
+                        <p>Impfquote</p>
+                        <p id="vaccinationThreeQuoteTotal"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Impfquote (5 - 17)</p>
+                        <p id="vaccinationThreeQuoteUnder"></p>
+                    </div>
+                    <div class="containerSingleData">
+                        <p>Impfquote (18+)</p>
+                        <p id="vaccinationThreeQuoteOver"></p>
+                    </div> 
                 </div>
-                <div class="containerSingleData">
-                    <p>Impfquote (18+)</p>
-                    <p id="vaccinationOneQuoteOver"></p>
-                </div>
-                <div class="containerSingleData">
-                    <p>Zweitimpfung</p>
-                    <p id="vaccinationTwo"></p>
-                </div>
-                <p id="vaccinationTwoToday" class="dataToday">+ </p>
-                <div class="containerSingleData">
-                    <p>Impfquote</p>
-                    <p id="vaccinationTwoQuoteTotal"></p>
-                </div>
-                <div class="containerSingleData">
-                    <p>Impfquote (5 - 17)</p>
-                    <p id="vaccinationTwoQuoteUnder"></p>
-                </div>
-                <div class="containerSingleData">
-                    <p>Impfquote (18+)</p>
-                    <p id="vaccinationTwoQuoteOver"></p>
-                </div>
-                <div class="containerSingleData">
-                    <p>Boosterimpfung</p>
-                    <p id="vaccinationThree"></p>
-                </div>
-                <p id="vaccinationThreeToday" class="dataToday">+ </p>
-                <div class="containerSingleData">
-                    <p>Impfquote</p>
-                    <p id="vaccinationThreeQuoteTotal"></p>
-                </div>
-                <div class="containerSingleData">
-                    <p>Impfquote (5 - 17)</p>
-                    <p id="vaccinationThreeQuoteUnder"></p>
-                </div>
-                <div class="containerSingleData">
-                    <p>Impfquote (18+)</p>
-                    <p id="vaccinationThreeQuoteOver"></p>
-                </div> 
             </div>
             <div class="covidDistricts">
                 <div class="search">
@@ -158,7 +180,7 @@
                         <p id="stateCasesPer100k"></p>
                     </div>
                     <div class="containerSingleData">
-                        <p>Hospitalisierungsrate / 7 Tage</p>
+                        <p>Hospitalisierungsfälle / 7 Tage</p>
                         <p id="stateHospitalizationCases7Days"></p>
                     </div>
                 </div>
