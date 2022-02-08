@@ -56,6 +56,10 @@ function showGermany(data) {
     document.getElementById("recoveredToday").innerHTML += formatNumber(data.delta.recovered);
     document.getElementById("deaths").innerHTML += formatNumber(data.deaths);
     document.getElementById("deathsToday").innerHTML += formatNumber(data.delta.deaths);
+    document.getElementById("weekIncidence").innerHTML += roundNumber(data.weekIncidence);
+    document.getElementById("casesPer100k").innerHTML += roundNumber(data.casesPer100k);
+    document.getElementById("rValue").innerHTML += roundNumber(data.r.value);
+    document.getElementById("hospitalizationCases7Days").innerHTML += formatNumber(data.hospitalization.cases7Days);
 }
 
 function showVaccinations(data) {
