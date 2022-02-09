@@ -49,8 +49,16 @@ footer {
     margin-bottom: 1rem;
 }
 
-h1, h2 {
+h1 {
     margin: 0px;
+}
+
+h2 {
+    margin: 0px 0px 1rem;
+}
+
+p {
+    margin: 0.5rem 0px;
 }
 
 .gridContainer {
@@ -68,7 +76,7 @@ h1, h2 {
     padding: 1rem;
     background-color: var(--container-bg-color);
     border: 1px solid var(--container-border-color);
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
     
@@ -104,9 +112,11 @@ h1, h2 {
 
 .dataToday {
     text-align: right;
+    margin-top: -0.5rem;
+    font-size: 15px;
 }
 
-#vaccineOne, #vaccineTwo, #vaccineThree, #district {
+#vaccineTwo, #vaccineThree, #district {
     margin: 1rem 0px 0px;
 }
 
