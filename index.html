@@ -21,18 +21,18 @@
                     Übersicht
                 </h2>
                 <div class="containerSingleData">
-                    <p>Fälle</p>
-                    <p id="cases"></p>
+                    <p class="bold">Fälle</p>
+                    <p id="cases" class="bold"></p>
                 </div>
                 <p id="casesToday" class="dataToday">+ </p>
                 <div class="containerSingleData">
-                    <p>Genesen</p>
-                    <p id="recovered"></p>
+                    <p class="bold">Genesen</p>
+                    <p id="recovered" class="bold"></p>
                 </div>
                 <p id="recoveredToday" class="dataToday">+ </p>
                 <div class="containerSingleData">
-                    <p>Todesfälle</p>
-                    <p id="deaths"></p>
+                    <p class="bold">Todesfälle</p>
+                    <p id="deaths" class="bold"></p>
                 </div>
                 <p id="deathsToday" class="dataToday">+ </p>
                 <div class="containerSingleData">
@@ -140,9 +140,13 @@
                 </div>
             </div>
             <div class="covidDistricts">
-                <div class="search">
-                    <input id="searchState" placeholder="Bundesland">
-                    <input id="searchName" placeholder="Landkreis">
+                <div class="searchContainer">
+                    <form class="search">
+                        <label for="State">Bundesland</label>
+                        <select name="State" id="selectState"></select>
+                        <label for="District">Landkreis</label>
+                        <select name="District" id="selectDistrict"></select>
+                    </form>
                 </div>
                 <div id="state">
                     <h2>
@@ -157,18 +161,18 @@
                         <p id="statePopulation"></p>
                     </div>
                     <div class="containerSingleData">
-                        <p>Fälle</p>
-                        <p id="stateCases"></p>
+                        <p class="bold">Fälle</p>
+                        <p id="stateCases" class="bold"></p>
                     </div>
                     <p id="stateCasesToday" class="dataToday">+ </p>
                     <div class="containerSingleData">
-                        <p>Genesen</p>
-                        <p id="stateRecovered"></p>
+                        <p class="bold">Genesen</p>
+                        <p id="stateRecovered" class="bold"></p>
                     </div>
                     <p id="stateRecoveredToday" class="dataToday">+ </p>
                     <div class="containerSingleData">
-                        <p>Todesfälle</p>
-                        <p id="stateDeaths"></p>
+                        <p class="bold">Todesfälle</p>
+                        <p id="stateDeaths" class="bold"></p>
                     </div>
                     <p id="stateDeathsToday" class="dataToday">+ </p>
                     <div class="containerSingleData">
@@ -197,18 +201,18 @@
                         <p id="districtPopulation"></p>
                     </div>
                     <div class="containerSingleData">
-                        <p>Fälle</p>
-                        <p id="districtCases"></p>
+                        <p class="bold">Fälle</p>
+                        <p id="districtCases" class="bold"></p>
                     </div>
                     <p id="districtCasesToday" class="dataToday">+ </p>
                     <div class="containerSingleData">
-                        <p>Genesen</p>
-                        <p id="districtRecovered"></p>
+                        <p class="bold">Genesen</p>
+                        <p id="districtRecovered" class="bold"></p>
                     </div>
                     <p id="districtRecoveredToday" class="dataToday">+ </p>
                     <div class="containerSingleData">
-                        <p>Todesfälle</p>
-                        <p id="districtDeaths"></p>
+                        <p class="bold">Todesfälle</p>
+                        <p id="districtDeaths" class="bold"></p>
                     </div> 
                     <p id="districtDeathsToday" class="dataToday">+ </p>
                     <div class="containerSingleData">
