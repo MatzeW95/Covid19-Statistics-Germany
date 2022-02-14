@@ -696,6 +696,14 @@ function fillSelectDistricts(state) {
     }
 }
 
+
+
+
+
+
+
+
+
 let stateSelection = document.getElementById('selectState');
 let districtSelection= document.getElementById('selectDistrict');
 
